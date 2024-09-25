@@ -1,5 +1,7 @@
-import { XmlRpcFault, XmlRpcServer, XmlRpcValue } from "@foxglove/xmlrpc";
-import { HttpServerNodejs } from "@foxglove/xmlrpc/nodejs";
+import { XmlRpcFault } from "../src/XmlRpcFault"
+import { XmlRpcValue } from "../src/XmlRpcTypes";
+import { XmlRpcServer} from "../src/XmlRpcServer"
+import { HttpServerNodejs } from "../src/nodejs";
 
 async function main() {
   const xmlrpc = new XmlRpcServer(new HttpServerNodejs());

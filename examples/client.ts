@@ -1,4 +1,4 @@
-import { XmlRpcClient } from "@foxglove/xmlrpc";
+import { XmlRpcClient } from "../src/XmlRpcClient"
 
 async function main() {
   const a = parseInt(process.argv[2] ?? "1");

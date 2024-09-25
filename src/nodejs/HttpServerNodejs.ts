@@ -60,7 +60,7 @@ export class HttpServerNodejs implements HttpServer {
   }
 
   async listen(port?: number, hostname?: string, backlog?: number): Promise<void> {
-    return await new Promise((resolve, reject) => {
+    await new Promise((resolve, reject) => {
       this._server.on("error", reject);
       this._server.listen(port, hostname, backlog, () => {
         this._server.removeListener("error", reject);
