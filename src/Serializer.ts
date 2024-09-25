@@ -97,6 +97,7 @@ function serializeValue(value: XmlRpcValue, xml: XMLBuilder) {
           stack.pop();
           break;
         case "object":
+          // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
           if (current.value == undefined) {
             valueNode.ele("nil");
             stack.pop();
