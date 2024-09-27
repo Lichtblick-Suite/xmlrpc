@@ -1,4 +1,4 @@
-import { XmlRpcClient } from "@foxglove/xmlrpc";
+import { XmlRpcClient } from "@lichtblick/xmlrpc/src";
 
 async function main() {
   const a = parseInt(process.argv[2] ?? "1");
